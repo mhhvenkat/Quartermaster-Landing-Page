@@ -55,22 +55,22 @@ const App: React.FC = () => {
           <div className="flex items-center gap-4 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <div className="w-8 h-8 bg-nobel-gold rounded-full flex items-center justify-center text-white font-serif font-bold text-xl shadow-sm pb-1">α</div>
             <span className={`font-serif font-bold text-lg tracking-wide transition-opacity ${scrolled ? 'opacity-100' : 'opacity-0 md:opacity-100'}`}>
-              ALPHAQUBIT <span className="font-normal text-stone-500">2024</span>
+              QUARTERMASTER
             </span>
           </div>
           
           <div className="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide text-stone-600">
-            <a href="#introduction" onClick={scrollToSection('introduction')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">Introduction</a>
-            <a href="#science" onClick={scrollToSection('science')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">The Surface Code</a>
-            <a href="#impact" onClick={scrollToSection('impact')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">Impact</a>
-            <a href="#authors" onClick={scrollToSection('authors')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">Authors</a>
-            <a 
-              href="https://doi.org/10.1038/s41586-024-08148-8" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a href="#introduction" onClick={scrollToSection('introduction')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">About</a>
+            <a href="#science" onClick={scrollToSection('science')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">Services</a>
+            <a href="#impact" onClick={scrollToSection('impact')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">Approach</a>
+            <a href="#authors" onClick={scrollToSection('authors')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">Founder</a>
+            <a
+              href="https://calendly.com/quartermaster-ir"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-5 py-2 bg-stone-900 text-white rounded-full hover:bg-stone-800 transition-colors shadow-sm cursor-pointer"
             >
-              View Paper
+              Book a Call
             </a>
           </div>
 
@@ -83,18 +83,18 @@ const App: React.FC = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="fixed inset-0 z-40 bg-[#F9F8F4] flex flex-col items-center justify-center gap-8 text-xl font-serif animate-fade-in">
-            <a href="#introduction" onClick={scrollToSection('introduction')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">Introduction</a>
-            <a href="#science" onClick={scrollToSection('science')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">The Science</a>
-            <a href="#impact" onClick={scrollToSection('impact')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">Impact</a>
-            <a href="#authors" onClick={scrollToSection('authors')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">Authors</a>
-            <a 
-              href="https://doi.org/10.1038/s41586-024-08148-8" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              onClick={() => setMenuOpen(false)} 
+            <a href="#introduction" onClick={scrollToSection('introduction')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">About</a>
+            <a href="#science" onClick={scrollToSection('science')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">Services</a>
+            <a href="#impact" onClick={scrollToSection('impact')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">Approach</a>
+            <a href="#authors" onClick={scrollToSection('authors')} className="hover:text-nobel-gold transition-colors cursor-pointer uppercase">Founder</a>
+            <a
+              href="https://calendly.com/quartermaster-ir"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
               className="px-6 py-3 bg-stone-900 text-white rounded-full shadow-lg cursor-pointer"
             >
-              View Paper
+              Book a Call
             </a>
         </div>
       )}
@@ -108,18 +108,18 @@ const App: React.FC = () => {
 
         <div className="relative z-10 container mx-auto px-6 text-center">
           <div className="inline-block mb-4 px-3 py-1 border border-nobel-gold text-nobel-gold text-xs tracking-[0.2em] uppercase font-bold rounded-full backdrop-blur-sm bg-white/30">
-            Nature • Nov 2024
+            European Real Estate
           </div>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-9xl font-medium leading-tight md:leading-[0.9] mb-8 text-stone-900 drop-shadow-sm">
-            AlphaQubit <br/><span className="italic font-normal text-stone-600 text-3xl md:text-5xl block mt-4">AI for Quantum Error Correction</span>
+            Quartermaster <br/><span className="italic font-normal text-stone-600 text-3xl md:text-5xl block mt-4">Quarterly Investor Reporting for Private Real Estate</span>
           </h1>
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-stone-700 font-light leading-relaxed mb-12">
-            A recurrent, transformer-based neural network that learns to decode the surface code with unprecedented accuracy.
+            High-quality quarterly reports for your LPs. We handle the narrative, market commentary, and presentation—so your team can focus on raising capital and closing deals.
           </p>
           
           <div className="flex justify-center">
              <a href="#introduction" onClick={scrollToSection('introduction')} className="group flex flex-col items-center gap-2 text-sm font-medium text-stone-500 hover:text-stone-900 transition-colors cursor-pointer">
-                <span>DISCOVER</span>
+                <span>LEARN MORE</span>
                 <span className="p-2 border border-stone-300 rounded-full group-hover:border-stone-900 transition-colors bg-white/50">
                     <ArrowDown size={16} />
                 </span>
@@ -133,16 +133,16 @@ const App: React.FC = () => {
         <section id="introduction" className="py-24 bg-white">
           <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
             <div className="md:col-span-4">
-              <div className="inline-block mb-3 text-xs font-bold tracking-widest text-stone-500 uppercase">Introduction</div>
-              <h2 className="font-serif text-4xl mb-6 leading-tight text-stone-900">The Noise Barrier</h2>
+              <div className="inline-block mb-3 text-xs font-bold tracking-widest text-stone-500 uppercase">The Challenge</div>
+              <h2 className="font-serif text-4xl mb-6 leading-tight text-stone-900">Reporting Shouldn't Slow You Down</h2>
               <div className="w-16 h-1 bg-nobel-gold mb-6"></div>
             </div>
             <div className="md:col-span-8 text-lg text-stone-600 leading-relaxed space-y-6">
               <p>
-                <span className="text-5xl float-left mr-3 mt-[-8px] font-serif text-nobel-gold">B</span>uilding a large-scale quantum computer requires correcting the errors that inevitably arise in physical systems. The state of the art is the <strong>surface code</strong>, which encodes information redundantly across many physical qubits.
+                <span className="text-5xl float-left mr-3 mt-[-8px] font-serif text-nobel-gold">E</span>very quarter, your investors expect a clear, professional update on their capital. But your IR team is focused on raising the next fund. Your investment team is working deals. The quarterly report becomes an afterthought—rushed out between higher priorities.
               </p>
               <p>
-                However, interpreting the noisy signals from these codes—a task called "decoding"—is a massive challenge. Complex noise effects like cross-talk and leakage confuse standard algorithms. <strong className="text-stone-900 font-medium">AlphaQubit</strong> uses machine learning to learn these complex error patterns directly from the quantum processor, achieving accuracy far beyond human-designed algorithms.
+                <strong className="text-stone-900 font-medium">Quartermaster</strong> takes this off your plate. We embed into your workflow, use your templates, and deliver institutional-quality quarterly reports that reflect your voice and your strategy.
               </p>
             </div>
           </div>
@@ -154,14 +154,14 @@ const App: React.FC = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div>
                         <div className="inline-flex items-center gap-2 px-3 py-1 bg-stone-100 text-stone-600 text-xs font-bold tracking-widest uppercase rounded-full mb-6 border border-stone-200">
-                            <BookOpen size={14}/> THE SYSTEM
+                            <BookOpen size={14}/> WHAT WE DELIVER
                         </div>
-                        <h2 className="font-serif text-4xl md:text-5xl mb-6 text-stone-900">The Surface Code</h2>
+                        <h2 className="font-serif text-4xl md:text-5xl mb-6 text-stone-900">Quarterly Reports, Handled</h2>
                         <p className="text-lg text-stone-600 mb-6 leading-relaxed">
-                           In a surface code, "Data Qubits" hold the quantum information, while "Stabilizer Qubits" interspersed between them act as watchdogs. They measure parity checks (X and Z type) to detect errors without destroying the quantum state.
+                           We produce the qualitative content your LPs expect: investor letters, quarterly presentations, market overviews, and portfolio commentary. Clear narratives that communicate performance, strategy, and outlook.
                         </p>
                         <p className="text-lg text-stone-600 mb-6 leading-relaxed">
-                            When a data qubit flips, adjacent stabilizers light up. The pattern of these lights is the "syndrome." The decoder's job is to look at the syndrome and guess which data qubit flipped.
+                            Your fund administrators handle the numbers. We handle the story—translating data into insight, and insight into confidence.
                         </p>
                     </div>
                     <div>
@@ -186,14 +186,14 @@ const App: React.FC = () => {
                      </div>
                      <div className="order-1 lg:order-2">
                         <div className="inline-flex items-center gap-2 px-3 py-1 bg-stone-800 text-nobel-gold text-xs font-bold tracking-widest uppercase rounded-full mb-6 border border-stone-700">
-                            THE INNOVATION
+                            HOW WE WORK
                         </div>
-                        <h2 className="font-serif text-4xl md:text-5xl mb-6 text-white">Neural Decoding</h2>
+                        <h2 className="font-serif text-4xl md:text-5xl mb-6 text-white">Embedded in Your Team</h2>
                         <p className="text-lg text-stone-400 mb-6 leading-relaxed">
-                            Standard decoders assume simple, independent errors. Real hardware is messier. AlphaQubit treats decoding as a sequence prediction problem, using a <strong>Recurrent Transformer</strong> architecture.
+                            We don't impose a one-size-fits-all template. We work within your existing formats, style guides, and brand. Your LPs see continuity; your team sees hours freed up.
                         </p>
                         <p className="text-lg text-stone-400 leading-relaxed">
-                            It ingests the history of stabilizer measurements and uses "soft" analog information—probabilities rather than just binary 0s and 1s—to make highly informed predictions about logical errors.
+                            Think of it as co-sourcing: you own the process and the output, we provide the dedicated resource to execute it. Quarterly, on schedule, without the overhead of a full-time hire.
                         </p>
                      </div>
                 </div>
@@ -204,9 +204,9 @@ const App: React.FC = () => {
         <section className="py-24 bg-[#F9F8F4]">
             <div className="container mx-auto px-6">
                 <div className="max-w-4xl mx-auto text-center mb-12">
-                    <h2 className="font-serif text-4xl md:text-5xl mb-6 text-stone-900">Outperforming the Standard</h2>
+                    <h2 className="font-serif text-4xl md:text-5xl mb-6 text-stone-900">Built for Boutique Managers</h2>
                     <p className="text-lg text-stone-600 leading-relaxed">
-                        AlphaQubit was tested on Google's Sycamore processor and accurate simulations. It consistently outperforms "Minimum-Weight Perfect Matching" (MWPM), the industry standard, effectively making the quantum computer appear cleaner than it actually is.
+                        We work with private real estate fund managers, developers, and GPs managing £100M to £5B. Firms with institutional capital partners who expect quality—but without the headcount to dedicate someone full-time to quarterly reporting. Core, value-add, opportunistic, development. If you're reporting to LPs every quarter, we can help.
                     </p>
                 </div>
                 <div className="max-w-3xl mx-auto">
@@ -221,24 +221,24 @@ const App: React.FC = () => {
                 <div className="md:col-span-5 relative">
                     <div className="aspect-square bg-[#F5F4F0] rounded-xl overflow-hidden relative border border-stone-200 shadow-inner">
                         <QuantumComputerScene />
-                        <div className="absolute bottom-4 left-0 right-0 text-center text-xs text-stone-400 font-serif italic">Simulation of the Sycamore Processor environment</div>
+                        <div className="absolute bottom-4 left-0 right-0 text-center text-xs text-stone-400 font-serif italic"></div>
                     </div>
                 </div>
                 <div className="md:col-span-7 flex flex-col justify-center">
-                    <div className="inline-block mb-3 text-xs font-bold tracking-widest text-stone-500 uppercase">IMPACT</div>
-                    <h2 className="font-serif text-4xl mb-6 text-stone-900">Towards Fault Tolerance</h2>
+                    <div className="inline-block mb-3 text-xs font-bold tracking-widest text-stone-500 uppercase">YOUR FOCUS</div>
+                    <h2 className="font-serif text-4xl mb-6 text-stone-900">Your Time, Better Spent</h2>
                     <p className="text-lg text-stone-600 mb-6 leading-relaxed">
-                        AlphaQubit maintains its advantage even as the code distance increases (up to distance 11). It handles realistic noise including cross-talk and leakage, effects that often cripple standard decoders.
+                        Quarterly reporting is essential but rarely urgent—until the deadline hits. By then, your IR team is mid-campaign and your investment team is deep in due diligence. Something gets rushed.
                     </p>
                     <p className="text-lg text-stone-600 mb-8 leading-relaxed">
-                        By learning from data directly, machine learning decoders can adapt to the unique quirks of each quantum processor, potentially reducing the hardware requirements for useful quantum computing.
+                        With Quartermaster, the work is done before the crunch. Your investors receive a polished, thoughtful update. Your team stays focused on what drives returns.
                     </p>
-                    
+
                     <div className="p-6 bg-[#F9F8F4] border border-stone-200 rounded-lg border-l-4 border-l-nobel-gold">
                         <p className="font-serif italic text-xl text-stone-800 mb-4">
-                            "Our work illustrates the ability of machine learning to go beyond human-designed algorithms by learning from data directly, highlighting machine learning as a strong contender for decoding in quantum computers."
+                            "Great investor communication isn't about more information. It's about the right narrative, delivered consistently."
                         </p>
-                        <span className="text-sm font-bold text-stone-500 tracking-wider uppercase">— Bausch et al., Nature (2024)</span>
+                        <span className="text-sm font-bold text-stone-500 tracking-wider uppercase">— Quartermaster</span>
                     </div>
                 </div>
              </div>
@@ -248,45 +248,17 @@ const App: React.FC = () => {
         <section id="authors" className="py-24 bg-[#F5F4F0] border-t border-stone-300">
            <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
-                    <div className="inline-block mb-3 text-xs font-bold tracking-widest text-stone-500 uppercase">RESEARCH TEAM</div>
-                    <h2 className="font-serif text-3xl md:text-5xl mb-4 text-stone-900">Key Contributors</h2>
-                    <p className="text-stone-500 max-w-2xl mx-auto">A collaboration between Google DeepMind and Google Quantum AI.</p>
+                    <div className="inline-block mb-3 text-xs font-bold tracking-widest text-stone-500 uppercase">FOUNDER</div>
+                    <h2 className="font-serif text-3xl md:text-5xl mb-4 text-stone-900">About</h2>
+                    <p className="text-stone-500 max-w-2xl mx-auto">A decade of experience in UK real estate investment and strategy.</p>
                 </div>
-                
+
                 <div className="flex flex-col md:flex-row gap-8 justify-center items-center flex-wrap">
-                    <AuthorCard 
-                        name="Johannes Bausch" 
-                        role="Google DeepMind" 
-                        delay="0s" 
+                    <AuthorCard
+                        name="Mahesh Venkat"
+                        role="Founder • Former Head of Strategy, Lendlease"
+                        delay="0s"
                     />
-                    <AuthorCard 
-                        name="Andrew W. Senior" 
-                        role="Google DeepMind" 
-                        delay="0.1s" 
-                    />
-                    <AuthorCard 
-                        name="Francisco J. H. Heras" 
-                        role="Google DeepMind" 
-                        delay="0.2s" 
-                    />
-                    <AuthorCard 
-                        name="Thomas Edlich" 
-                        role="Google DeepMind" 
-                        delay="0.3s" 
-                    />
-                    <AuthorCard 
-                        name="Alex Davies" 
-                        role="Google DeepMind" 
-                        delay="0.4s" 
-                    />
-                    <AuthorCard 
-                        name="Michael Newman" 
-                        role="Google Quantum AI" 
-                        delay="0.5s" 
-                    />
-                </div>
-                <div className="text-center mt-12">
-                    <p className="text-stone-500 italic">And many others contributing to hardware, theory, and engineering.</p>
                 </div>
            </div>
         </section>
@@ -296,12 +268,12 @@ const App: React.FC = () => {
       <footer className="bg-stone-900 text-stone-400 py-16">
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="text-center md:text-left">
-                <div className="text-white font-serif font-bold text-2xl mb-2">AlphaQubit</div>
-                <p className="text-sm">Visualizing "Learning high-accuracy error decoding for quantum processors"</p>
+                <div className="text-white font-serif font-bold text-2xl mb-2">Quartermaster</div>
+                <p className="text-sm">Quarterly investor reporting for private real estate.</p>
             </div>
         </div>
         <div className="text-center mt-12 text-xs text-stone-600">
-            Based on research published in Nature (2024). Generated by AI.
+            © 2024 Quartermaster Investor Relations
         </div>
       </footer>
     </div>
